@@ -16,6 +16,34 @@ class AuthService{
             throw new Error(error);
         });
     }
+
+    testLogin(id, password){
+        axios({
+            method:"POST",
+            url: '/api/login',
+            data:{
+                id: id,
+                pw: password
+            }
+        }).then((res)=>{
+            console.log(res);
+        }).catch(error=>{
+            console.log(error);
+            throw new Error(error);
+        });
+    }
+
+    test(){
+        axios({
+            method:"GET",
+            url: '/api/login',
+        }).then((res)=>{
+            console.log(res);
+        }).catch(error=>{
+            console.log(error);
+            throw new Error(error);
+        });
+    }
 }
 
 export default AuthService;
