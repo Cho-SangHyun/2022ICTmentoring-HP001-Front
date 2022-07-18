@@ -17,20 +17,28 @@ class AuthService{
         });
     }
 
-    testLogin(id, password){
-        axios({
-            method:"POST",
-            url: '/api/login',
-            data:{
-                id: id,
-                pw: password
-            }
-        }).then((res)=>{
-            console.log(res);
-        }).catch(error=>{
-            console.log(error);
-            throw new Error(error);
-        });
+    testLogin(id, password, onLogin){
+        const form = new FormData();
+        form.append('id', id);
+        form.append('pw', password);
+
+        axios.post(`/api/login`, form)
+        .then( response => {
+            console.log(response.data);
+        }).catch( error => {
+            console.log('failed', error)
+        })
+
+        // axios({
+        //     method:"POST",
+        //     url: '/api/login',
+        //     form
+        // }).then((res)=>{
+        //     console.log(res);
+        // }).catch(error=>{
+        //     console.log(error);
+        //     throw new Error(error);
+        // });
     }
 
     test(){

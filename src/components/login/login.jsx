@@ -20,7 +20,19 @@ const Login = ({authService}) => {
 		// password : cityslicka
 		// 로 입력하면 로그인되고 main페이지로 넘어감
 		// authService.login(idRef.current.value, passwordRef.current.value, () => {navigate("/main")});
-		authService.testLogin(idRef.current.value, passwordRef.current.value);
+		
+		console.log(`id name: ${idRef.current.name}`);
+		authService.testLogin(idRef.current.value, passwordRef.current.value, () => {navigate("/main")});
+		// fetch("/api/login", {
+		// 	method: "POST",
+		// 	headers: {
+		// 		"Content-Type": "application/json",
+		// 	},
+		// 	body: JSON.stringify({
+		// 		id: "admin",
+		// 		pw: "admin"
+		// 	}),
+		// 	}).then((response) => console.log(response));
 	};
 
 	return(
