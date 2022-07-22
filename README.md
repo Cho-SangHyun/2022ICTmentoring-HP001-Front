@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# AI 기반 스마트물류 무인관리 시스템 개발
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📜 프로젝트 소개
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+- 항만은 많은 관리자가 상주하지만 상황에 따라 관리가 어렵다.
+- 따라서 항만 내 여러 곳에 AI기반 카메라를 설치한 후, 실시간으로 현장을 관찰하며 무단 침입자 발생 등과 같은 상황 발생시
+즉시 관리자에게 상황을 알리는 시스템을 만든다.
+- 최종적으로 본 프로젝트는 딥러닝을 기반으로 항만 내에서 발생 가능한 다양한 사건들의 패턴을 학습해 모델을 구축한 후, 
+항만 내에 ipcam 등을 설치해 **위험 상황을 식별하면 관리자에게 알림을 주는 서비스**를 만들어 관리자가 자신이 없는 장소
+에서 발생한 위험 상황에 빠른 대처가 가능하도록 돕는 것을 목표로 한다.
 
-### `yarn start`
+## 프로젝트 기간
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**2022.06月 ~ 2022.11月**
 
-### `yarn test`
+## 개발 환경 및 사용할 라이브러리, 프레임워크, 기술
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 라이브러리/프레임워크/기술 | 목적 |
+| --- | --- |
+| OpenCV | 실시간 영상 프로세싱 |
+| React | 관리자 웹 화면 개발 |
+| Spring | 서버 구축 |
+| WebRTC | 실시간 cctv 영상 전송 |
 
-### `yarn build`
+## 역할 분담
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 의양 ➡️ 백엔드 중심 개발,
+- 창호 ➡️ 딥러닝 모델 중심 개발,
+- 상현 ➡️ 관리자 화면 개발, 백엔드 개발
